@@ -13,7 +13,7 @@ def logout():
     return "<h1> Logout successful </h1>"
 
 
-@auth.route("/sign-up")
+@auth.route("/sign-up", methods=["POST", "GET"])
 def sign_up():
     return render_template("sign_up.html")
 
